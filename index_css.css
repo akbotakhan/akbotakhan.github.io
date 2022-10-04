@@ -19,14 +19,14 @@ body {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-
+        column-gap: 40px;
         padding:1em;
         font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: x-small;
     }
 
     .musts span {
         width: 300px;
-        padding: 10px 15px;
         border: 1px solid #ddd;
         border-radius: 20px;
         margin: 10px;
@@ -244,6 +244,7 @@ h6 {
     border: 1px solid #ddd;
     border-radius: 20px;
     margin: 10px;
+    orientation: horizontal;
  }
 
  #dummy1 {
