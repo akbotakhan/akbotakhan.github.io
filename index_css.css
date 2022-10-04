@@ -1,8 +1,92 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
 .container {
-    width:960px;
+    width: 360px;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container { 
+        width: 800px;
+    }
+    
+    .musts {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        padding:1em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
+    .musts span {
+        width: 300px;
+        padding: 10px 15px;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+    #must1 {
+        display: inline-block;
+        inset-inline:right;
+        width: 180px;
+
+    }
+ 
+    #must2 {
+        display: inline-block;
+        inset-inline:right;
+        width: 180px;
+    }
+
+    #must3 {
+        display: inline-block;
+        inset-inline:right;
+        width: 180px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 4000px) {
+    .container { 
+        width: 800px;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 40px;
+        padding:1em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+     }
+    
+    .links span {
+        width: 300px;
+        padding: 10px 15px;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        margin: 10px;
+     }
+     
+    #categories {
+        display: inline-block;
+        inset-inline:right;
+    
+     }
+     
+    #quick {
+        display: inline-block;
+        inset-inline:right;
+        
+     }
+}
     .menu {
     font: 1em Georgia;
     text-align: center;
@@ -45,40 +129,42 @@ h2 {
 
 #task {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left: 200px;
-    margin-right: 200px;
     text-align: center;
     color: rgb(0, 0, 0);
 }
 
 .musts {
-    columns: 3;
-    column-width: 200px;
-    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
     padding:1em;
     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ .musts span {
+    width: 300px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin: 10px;
  }
  
  #must1 {
     display: inline-block;
     inset-inline:right;
-    border: 1px solid #ddd;
-    border-radius: 20px;
+
  }
  
  #must2 {
-    margin-left: 50px;
     display: inline-block;
     inset-inline:right;
-    border: 1px solid #ddd;
-    border-radius: 20px;
+
  }
 
  #must3 {
     display: inline-block;
     inset-inline:right;
-    border: 1px solid #ddd;
-    border-radius: 20px;
  }
 
 
@@ -88,30 +174,23 @@ h2 {
  }
 
 #names { 
-margin-left: 40%;
 color: purple;
 font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #submit {
-    margin-left: 200px;
-    margin-right: 200px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black
 }
 
 #submit2 {
-    margin-left: 200px;
-    margin-right: 200px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black
 }
 
 #submit3 {
-    margin-left: 200px;
-    margin-right: 200px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black
@@ -119,23 +198,18 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 
 #table {
     background-color: lightgray;
-    margin-left: 40%;
-    margin-top: 50px;
+    margin: auto;
     font-style: oblique;
     font-family: Georgia, 'Times New Roman', Times, serif;    
     }
 
 #grading {
-    margin-left: 200px;
-    margin-right: 200px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black
 }
 
 #group {
-    margin-left: 200px;
-    margin-right: 200px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: larger;
@@ -143,53 +217,51 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .important {
-    margin-left: 200px;
-    margin-right: 200px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+
 h6 {
-    margin-left: 200px;
-    margin-right: 200px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(233, 79, 194);
     font-size: x-large;
 }
 
-.dummies {
-    columns: 3;
-    column-width: 200px;
-    margin-left: 8px;
+#dummycontent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
     padding:1em;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#dummycontent span {
+    width: 300px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin: 10px;
  }
- 
+
  #dummy1 {
     display: inline-block;
     inset-inline:right;
-    border: 1px solid #ddd;
-    border-radius: 20px;
  }
  
  #dummy2 {
     display: inline-block;
     inset-inline:right;
-    border: 1px solid #ddd;
-    border-radius: 20px;
  }
 
  #dummy3 {
     display: inline-block;
     inset-inline:right;
-    border: 1px solid #ddd;
-    border-radius: 20px;
  }
 
 #dummycontent {
-    margin-left: 200px;
-    margin-right: 200px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: larger;
@@ -197,31 +269,25 @@ h6 {
     color: black
 }
 
-#contact1 {
-    margin-left: 200px;
-    margin-right: 200px;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: xx-large;
-    color: rgb(222, 78, 193)
-}
 .cont {
-    columns: 2;
-    column-width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
     padding:1em;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cont span {
+    margin: 10px;
  }
 
  #contacts {
-    margin-left: 400px;
     display: inline-block;
-    inset-inline:right;
  }
 
  #map {
-    margin-left: 30px;
     display: inline-block;
-    inset-inline:right;
  }
 
 h1:hover {
@@ -233,49 +299,38 @@ a[href="#SignIn"] {
 }
 
 #image1 {
-    content:url(data:"logo.png");
-    width: 1450px;
-    height: 200px;
-    padding: 30px;
+    width: 100%;
+    height: auto;
 }
 
 #image2 {
-    content:url(data:"logo2.png");
-    width: 1400px;
-    height: 100px;
-    padding: 5px;
+    width: 100%;
+    height: auto;
 }
 
 #image3 {
-    content: url(data:"logo3.jpeg");
     padding: 5px;
-        width: 520px;
-        height: 290px; 
-        margin-left: 420px;
-        border: 1px solid #ddd;
-      border-radius: 4px;
-    margin-left: 30%;
-    }
+    width: 220px;
+    height: 120px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #image4 {
-    content:url(data:"logo4.jpg");
-    width: 200px;
-    height: 110px;
-    padding: 5px;
+    padding: 20px;
+    width: 120px;
+    height: auto;
 }
 
 #categories {
-    margin-left: 200px;
-    margin-right: 200px;
+    display: inline;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: xx-large;
-    color: rgb(222, 78, 193)
  }
 
- #categories1 {
-    margin-left: 550px;
- }
     .categories li a {
         color: black;
         text-decoration: none;
@@ -291,17 +346,11 @@ a[href="#SignIn"] {
     }
 
 #quick {
-    margin-left: 200px;
-    margin-right: 200px;
+    display: inline;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: xx-large;
-    color: rgb(222, 78, 193)
  }
  
-#quick1 {
-    margin-left: 550px;
- }
 
 .quicks li a {
     color: black;
@@ -316,3 +365,4 @@ a[href="#SignIn"] {
 .quicks li a:active {
     color: blue;
 }
+
