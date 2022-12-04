@@ -1,355 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <link rel="stylesheet" href="index_css.css">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Design</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> Personal Webste - Akbota </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="style.css" rel="stylesheet">
+
 </head>
+
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="banner">Web Programming...</div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">Home</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#homehome">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link  scrollto" href="#services">Experience</a></li>
+          <li class="dropdown"><a href="#journal"><span>Blog</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="blog-single.html">CV</a></li>
+              <li><a href="blog-single.html">Photos</a></li>
+              <li><a href="blog-single.html">Articles</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
   </header>
 
-  <!-- Navbar -->
-  <nav>
-      <a class="logo" href="#">
-        <img id="image1" src="logo.png" alt="logo">
-      </a>
+  <!-- Main Page with the Photo -->
+  <div id="homehome" class="home">
+
+    <div class="container">
+      <div class="homehome-content">
+        <h1>I'm <span class="typed" data-typed-items="Akbota Omirkhanova, Small Business Owner, Content Manager, Researcher"></span></h1>
+        <p>Small Business Owner, Content Manager, Researcher</p>
+
+        <ul class="list-unstyled list-social">
+          <li><a href=""><i class="bi bi-facebook"></i></a></li>
+          <li><a href=""><i class="bi bi-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/akbota.khan/"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/akbotaomirkhanova/"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <div id="about" class="paddsection">
       <div class="container">
-      <ul class="menu">
-        <li><a href="#task">Task</a></li>
-        <li><a href="#requirements">Requirements</a></li>
-        <li><a href="#submission">Submission</a></li>
-        <li><a href="#grading">Grading</a></li>
-        <li><a href="#deadline">Deadline</a></li>
-        <li><a href="#SignIn">SignIn</a></li>
-      </ul>
-      </div>
-    </nav>
+        <div class="row justify-content-between">
 
-  <!-- Main Content -->
-  <section class="main_content">
-    <h1 id="main-heading" class="topic">
-      Lab 4 - Designing with CSS 
-    </h1>
-    <hr>
-      <h2 >Task</h2>
-      <img id="image2" src="logo2.png" alt="logo" >
-      <article id="task">
-      <p>  
-        As you have alredy learned in the last lecture, 
-        CSS is about the presentation of the documents
-        like HTML or XML.
-        So, in this lab assignment you need to form a group of two people and then together apply
-        CSS styling rules to make this template HTML file look
-        beautiful and interesting.  
-      </p>
-      <p>
-        There are no 
-        limits to what techniques you use and how you 
-        ultimately solve this task. 
-        However, there are some minimal requirements
-        which are explained in the next section below.
-        <a href="#requirements">Next...</a>
-      </p>
-    </article>
-    <article id="requirements">
-      <h2 >Requirements</h2>
-    <div class="musts"> 
-    <span id="must1">
-      <p>
-        The main requirement for this task is to 
-        style this HTML document without any 
-        changes (including adding new and deleting the existing elements) to itself except for these cases: 
-        <ul>
-          <br>
-          <li>
-            You can add <strong>id</strong>
-            and <strong>class</strong> 
-            attributes to the ncessary elements. 
-            </li>
-            <li>
-            You can replace the 
-            images in the defined elements within this document with your
-            own ones. 
-            </li><li>
-            Notice that there is a place for a 
-            large banner on the top of the page,
-            you <strong>must</strong> place an image there only using CSS.
-            </li>
-            <li>
-              You <strong>must</strong> write your names in the specified fields below.
-            </li>
-            <li>You can change the location
-              of in the map below or replace it with the image.
-            </li>
-        </ul>
-      </p>
-    </span> 
-    <span id="must2">
-      <p>
-        In your stylesheet you <strong>must</strong>
-         use these selectors:
-        <ul>
-          <br>
-          <br>
-          <br>
-          <br>
-          <li>Element selectors;</li>
-          <li>Class selectors;</li>
-          <li>Attribute selectors;</li>
-          <li>ID selectors.</li>
-          <li>Pseudo-class selectors.</li>
-        </ul>
-      </p>
-    </span> 
-    <span id="must3"> 
-      <p>
-        Also, you <strong>must</strong> 
-        use the necessary CSS properties
-        and demonstrate the following changes
-        of the elements:
-        <ul>
-          <br>
-          <br>
-          <li>font and background colors;</li>
-          <li>font family and size;</li>
-          <li>margin, padding and borders;</li>
-          <li>image sizes (width and height);</li>
-          <li>text alignment (horizontal and vertical);</li>
-        </ul>
-        <article id="italic">
-        <br>
-        <br>
-        <br>
-        Additionally, a special focus <strong>must</strong> 
-        be done to the menu links.        
-        They need to change their status appropriately 
-        (active, hover, visited)
-        as well as be placed in a natural way,
-        i.e. horizontally or vertically. 
-        <a href="#submission">Next...</a>
-      </article>
-      </p>
-    </span> 
-    </div> 
-    </article>
-    <article id="submission">
-      <h2>Submission</h2>
-      <p id="submit">
-       As usual, you <strong>must</strong> submit 
-       your work via Github. All the files and images need to go to 
-       your <strong> <i>username.github.io</i> </strong>repository. 
-       Also, this page must be available 
-       through this domain name.
-      </p>
-    <article id="group">
-      <h3>Group</h3>
-    </article>
-      <p id="submit2">
-        Since this is a group project, i.e. a team of two members,
-        it is required to insert a photo of your group
-        in this <strong>&lt;img&gt;</strong> element and write your names in the
-        following list items. <br>
-      </p>
-        <img id="image3" src="logo3.jpeg" alt="logo" width="80px" height="80px">
-        <ul id="names">
-          <li>Bekniyazova Azhar</li>
-          <li>Omirkhanova Akbota</li>
-        </ul>
-      <p id="submit3">
-        Also, to submit your group members, 
-        please fill in the this 
-        <a href="#">Google Sheet</a> form. 
-        <a href="#grading">  Next...</a>
-      </p>
-    </article>
-    <article id="grading">
-      <h2>Grading</h2>
-      For this assignment you will get 
-      <strong>80 points</strong>  in total.
-      The final score is the sum of the points 
-      for each of the criteria below.
-      This score will be the same for both 
-      of the team members.
-    </article>
-    <table id="table">
-        <tr>
-          <th>Criteria</th>
-          <th>Points</th>
-        </tr>
-        <tr>
-          <td>Group is formed </td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>CSS file is linked to the document</td>
-          <td>5 pts</td>
-        </tr>
-        <tr>
-          <td>Banner image is present</td>
-          <td>5 pts</td>
-        </tr>
-        <tr>
-          <td>Menu is styles appropriately</td>
-          <td>5 pts</td>
-        </tr>
-        
-        <tr>
-          <td>Group photo is present </td>
-          <td>5 pts</td>
-        </tr>
-         <tr>
-          <td>HTML file is unchanged</td>
-          <td>5 pts</td>
-        </tr>
-        <tr>
-          <td>Required selectors are used</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Required CSS properties are used</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Website is available online</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Website looks nice and not broken</td>
-          <td>10 pts</td>
-        </tr>
-        <tr>
-          <td>Extra cool stuff is used</td>
-          <td>5 pts</td>
-        </tr>
-        </tr>
-      </table>
-  </section>
+          <div class="col-lg-4 ">
+            <div class="div-img-bg">
+              <div class="about-img">
+                <img src="assets/img/me.jpg" class="img-responsive" alt="me">
+              </div>
+            </div>
+          </div>
 
-  <!-- Aside Information -->
-  <aside class="important">
-    <br>
-    <h6>Important</h6>
-    <section class="aside_content">
-      <article id="deadline">
-        <h4>Deadlines:</h4>
-        There are two deadlines - one for 
-        forming a group and the other is for the 
-        submission of the assignment itself.
-        <ul class="important">
-          <li>Group: Sep. 9, 2022, 23:59</li>
-          <li>Submission: Sep. 18, 2022, 23:59</li>
-        </ul>
-        <p>
-        Missing the deadline for the group formation will result in 
-        <strong> not getting any points</strong> for the corresponding criteria. <br>
-        </p>
-        <p>And, as usual, missing the deadline for submittion of your work will result in reduction of your score by 50%.</p>
-        
-        <a href="#">More...</a>
-      </article>
-      </section>
-  </aside>
-  <section id="dummies">
-
-    <h6>Some Dummy Content</h6>
-    <div id="dummycontent">
-      <span id="dummy1">
-        <h4>Article 1</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Odit, fugiat eveniet! 
-          Optio quia perspiciatis earum ipsa dicta 
-          porro dolorum facere laudantium repellat 
-          ad necessitatibus asperiores dolor, molestias 
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </span>
-      <span id="dummy2">
-        <h4>Article 2</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Odit, fugiat eveniet! 
-          Optio quia perspiciatis earum ipsa dicta 
-          porro dolorum facere laudantium repellat 
-          ad necessitatibus asperiores dolor, molestias 
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </span>
-      <span id="dummy3">
-        <h4>Article 3</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, 
-          adipisicing elit. Odit, fugiat eveniet! 
-          Optio quia perspiciatis earum ipsa dicta 
-          porro dolorum facere laudantium repellat 
-          ad necessitatibus asperiores dolor, molestias 
-          officiis corrupti iusto.
-          <a href="#">More...</a>
-        </p>
-      </span>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <article id="contact1">
-    <h6>Contacts</h6>
-    </article>
-    <div class="cont">
-      <div id="contacts">
-        <p>
-          Nazarbayev University <br>
-          53 Kabanbay Batyr ave. <br>
-          Block 7, Room 7.422 <br>
-          Ph.: +7-7172-123-4567 <br>
-          <a href="mailto:info@naturallyinspired.com" class="email">
-            info@naturallyinspired.com
-          </a>
-        </p>
-      </div>
-      <div id="map">
-          <img id="image4" src="logo4.jpg" alt="logo" width="80px" height="80px">
+          <div class="col-lg-7">
+            <div class="about-descr">
+              <p class="p-heading">I'm a student at Nazarbayev, who is aimed at developing sustainable entrepreneurship in Kazakhstan for creating equity for women and children.</p>
+              <p class="separator">I have an extensive social and volunteering background in offering more equity for women and children cumulated during years of study in Nazarbayev University, as well as considerable results in commercial management sphere.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="links"> 
-    <div class="categories">
-      <article id="top">
-      <h6>Top 10 Categories</h6>
-      </article>
-      <ul id="categories">
-        <li><a href="#1">Category 1</a></li>
-        <li><a href="#2">Category 2</a></li>
-        <li><a href="#3">Category 3</a></li>
-        <li><a href="#4">Category 4</a></li>
-        <li><a href="#5">Category 5</a></li>
-        <li><a href="#6">Category 6</a></li>
-        <li><a href="#7">Category 7</a></li>
-        <li><a href="#8">Category 8</a></li>
-        <li><a href="#9">Category 9</a></li>
-        <li><a href="#10">Category 10</a></li>
-      </ul>
+
+    <!-- ======= Services Section ======= -->
+    <div id="services">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>WORK - RESEARCH - VOLUNTEERING EXPERIENCE</h2>
+        </div>
+      <div class="container">
+        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-briefcase"></i>
+                <span>Event Manager</span>
+                <span>"NU Women"</span>
+                <p>2018 August - 2019 May</p>
+                <ul class="separator">
+                  <li>Coordinated members of the department.</li>
+                  <li>Developed ideas and concepts of events and worked in cooperation with other departments and student clubs.</li>
+                  <li>Organized workshops, seminars, and a forum for 100+ students.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-card-checklist"></i>
+                <span>Volunteering Tutor</span>
+                <span>"NU Red Crescent"</span>
+                <p>2019 January - 2020 March</p>
+                <ul class="separator">
+                  <li>Taught primary school students once a week for 3 hours.</li>
+                  <li>Helped students improve their academic standing.</li>
+                  <li>Assessed their knowledge, and created individual lesson plans for each lesson.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-bar-chart"></i>
+                <span>Social Media Manager</span>
+                <span>Khan Academy Qazaq</span>
+                <p>2018 August - 2020 March</p>
+                <ul class="separator">
+                  <li>Worked in a team at the founding stages of the project.</li>
+                  <li>Worked on the project's brand recognition.</li>
+                  <li>Attracted volunteers for the project through social media.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-binoculars"></i>
+                <span>Assistant of professors</span>
+                <span>Research Assistantships</span>
+                <p>2020 and 2022 Fall semesters</p>
+                <ul class="separator">
+                  <li>Assisted Dr. Ramey Moore with analyzing and selecting research articles about the perception of environmental issues in Kazakhstan.</li>
+                  <li>Translated, analyzed and synthesized data from social media.</li>
+                  <li>Assisted Dr. Reed Coil with conducting archaeological excavations, data entry and analysis.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-brightness-high"></i>
+                <span>Event Manager</span>
+                <span>Social Project "Ertenim"</span>
+                <p>2021 August - November</p>
+                <ul class="separator">
+                  <li>Created the concept and mission of the project with other members.</li>
+                  <li>Organized a three day long summer camp for children from socially vulnerable families.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-calendar4-week"></i>
+                <span>General Manager</span>
+                <span>LLC "Arel"</span>
+                <p>2020 and 2022 Fall semesters</p>
+                <ul class="separator">
+                  <li>Raised the revenue by 4000 euros a month after allocating marketing expenditures more effectively.</li>
+                  <li>Changed the brand presentation on marketing platforms. Changed the supplier company to solve logistics issues.</li>
+                  <li>Systematised all financial aspects.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
     </div>
-    <div class="quicks">
-      <article id="ql">
-      <h6>Quick Links</h6>
-      </article>
-      <ul id="quick">
-        <li><a href="#11">Item1</a></li>
-        <li><a href="#12">Item2</a></li>
-        <li><a href="#13">Item3</a></li>
-        <li><a href="#14">Item4</a></li>
-        <li><a href="#15">Item5</a></li>
-        <li><a href="#16">Item6</a></li>
-      </ul>
+    
+
+    <!-- ======= Journal Section ======= -->
+    <div id="journal" class="text-left paddsection">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>blog</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="journal-block">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+                <a href="blog-single.html"><img src="assets/img/blog-post-1.jpg" class="img-responsive" alt="img"></a>
+                <div class="journal-txt">
+                  <h4><a href="blog-single.html">CLICK TO SEE THE CV</a></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+                <a href="blog-single.html"><img src="assets/img/blog-post-2.jpg" class="img-responsive" alt="img"></a>
+                <div class="journal-txt">
+                  <h4><a href="blog-single.html">PHOTOS</a></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+                <a href="blog-single.html"><img src="assets/img/blog-post-3.jpg" class="img-responsive" alt="img"></a>
+                <div class="journal-txt">
+                  <h4><a href="blog-single.html">MY ARTICLES</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- ======= Contact Section ======= -->
+    <div id="contact" class="paddsection">
+      <div class="container">
+        <div class="contact-block1">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="contact-contact">
+                <h2 class="mb-30">CONTACTS</h2>
+                <ul class="contact-details">
+                  <li><span>53, Kabanbay Batyr ave.</span></li>
+                  <li><span>Astana, Kazakhstan</span></li>
+                  <li><span>+7 778 215 4641</span></li>
+                  <li><span>akbota.omirkhanova@nu.edu.kz</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row gy-3">
+                  <div class="col-lg-6">
+                    <div class="form-group contact-block1">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+                  <div class="mt-0">
+                    <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer>
+
+  </main>
+
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/akbota.khan/"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/akbotaomirkhanova/"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+
+  </div>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="main.js"></script>
+
 </body>
+
 </html>
